@@ -1,3 +1,55 @@
+/* Universal */
 *{
-  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+/* Align horizontally */
+li {
+    float: left;
+}
+/* Decorations to the buttons */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Hover white */
+li a:hover{
+    background-color: white;
+    color: black;
+}
+#navbartitle{
+    float: left;
+    color: white;
+    text-align: center;
+}
+/* Body */
+body{
+    background: lightskyblue url('galaxy-background.jpg') no-repeat fixed center;
+}
+.header{
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+#paragraph{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.active{
+    background-color: gray;
+    color: white;
 }
