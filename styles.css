@@ -3,53 +3,50 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(0, 0, 0);
-}
-/* Navbar */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
-/* Align horizontally */
-li {
-    float: left;
-}
-/* Decorations to the buttons */
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-/* Hover white */
-li a:hover{
-    background-color: white;
-    color: black;
-}
-#navbartitle{
-    float: left;
-    color: white;
-    text-align: center;
-}
-/* Body */
-body{
-    background: lightskyblue url('galaxy-background.jpg') no-repeat fixed center;
+    background-color: rgb(231, 231, 231);
 }
 .header{
-    color: white;
-    padding: 50px;
     text-align: center;
-}
-#paragraph{
-    color: white;
     padding: 20px;
+    background-color: rgb(201, 0, 0);
+    font-size: 150px;
+    color: white;
+    font-family: 'Anton';
+    -webkit-text-stroke: 4px black;
+}
+#paragraph {
+    padding: 15px 15px;
+    margin: 15px 15px;
+    font-size: 20px;
+}
+/* Navbar */
+#navbar{
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
     text-align: center;
 }
-.active{
-    background-color: gray;
+/* Navbar links */
+#navbar a{
+    display: inline-block;
     color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    background-color: black;
+    font-family: 'anton';
+    font-size: 20px;
+}
+/* Page Content */
+.content {
+    padding: 16px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
 }
